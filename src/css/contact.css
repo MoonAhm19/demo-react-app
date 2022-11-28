@@ -1,0 +1,159 @@
+.contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, var(--grey), var(--dark));
+    margin-top: 40px;
+}
+
+.contact-content {
+    padding: 70px 20px;
+    width: 1500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content h1 {
+    font-weight: 600;
+    width: 100%;
+    color: var(--pure);
+    padding: 20px 0;
+    border-bottom: 2px solid var(--pure);
+    text-align: center;
+}
+
+.contact-info {
+    width: 80%;
+    height: 80%;
+    border: none;
+    display: flex;
+    gap: 24px;
+}
+
+.contact-left,
+.contact-right {
+    width: 50%;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    color: var(--pure);
+}
+
+.contact-left span {
+    font-size: 1.3rem;
+}
+
+.contact-left h3 {
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contact-right .list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: var(--pure);
+
+}
+
+.contact-right h2{
+    text-align: center;
+    color: var(--pure);
+    margin: 12px ;
+    border-bottom: 1px solid var(--pure);
+}
+
+.list span {
+    width: 80%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.items{
+    margin: 25px;
+    font-size: 1.4em;
+    text-align: center;
+    color: var(--pure);
+    letter-spacing: 1.3px;
+}
+
+.items h4{
+    font-family: "poppins", sans-serif;
+}
+
+.items h5{
+    font-weight: 200;
+}
+
+
+
+
+/* mobile Section */
+
+
+@media (max-width: 1600px) {
+    .contact-content{
+        width: 1400px;
+    }
+}
+@media (max-width: 1400px) {
+    .contact-content{
+        width: 1200px;
+    }
+}
+@media (max-width: 1200px) {
+    .contact-content{
+        width: 900px;
+    }
+}
+@media (max-width: 900px) {
+    .contact-content{
+        width: 700px;
+    }
+
+    .contact-info{
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        height: 70vh;
+    }
+
+    .contact-left .git{
+        font-size: .9rem;
+    }
+    
+    .contact-right{
+        width: 80%;
+    }
+    .contact-right h2{
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 700px) {
+    .contact-content{
+        width: 500px;
+    }
+}
+@media (max-width: 500px) {
+    .contact-content{
+        width: 400px;
+    }
+}
